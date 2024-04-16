@@ -34,7 +34,7 @@ const GasTracker = () => {
 
   // Function to determine which audio track and image to use
   const determineTrackAndImage = (gas) => {
-    if (gas < 20) {
+    if (gas < 10) {
       setAudioTrack(
         "https://arweave.net/QeijcRbWa-MoXVsoLqUBxBqPUbRs1o1Oas1Hifsdz9o"
       );
@@ -42,9 +42,21 @@ const GasTracker = () => {
         "https://arweave.net/u5YsxIo53bHlhNbtjZxaH1PSdKLTvY6Tm0dgZhulnp8"
       );
       setOverlayStyle({
-        top: "39%",
+        top: "36%",
         left: "50.2%",
-        fontSize: "5vw",
+        fontSize: "8vw",
+      });
+    } else if (gas < 20) {
+      setAudioTrack(
+        "https://arweave.net/QeijcRbWa-MoXVsoLqUBxBqPUbRs1o1Oas1Hifsdz9o"
+      );
+      setImageSrc(
+        "https://arweave.net/u5YsxIo53bHlhNbtjZxaH1PSdKLTvY6Tm0dgZhulnp8"
+      );
+      setOverlayStyle({
+        top: "36%",
+        left: "48.2%",
+        fontSize: "8vw",
       });
     } else if (gas < 40) {
       setAudioTrack(
@@ -54,9 +66,9 @@ const GasTracker = () => {
         "https://arweave.net/u5YsxIo53bHlhNbtjZxaH1PSdKLTvY6Tm0dgZhulnp8"
       );
       setOverlayStyle({
-        top: "39%",
+        top: "38%",
         left: "50.2%",
-        fontSize: "5vw",
+        fontSize: "6vw",
       });
     } else if (gas < 60) {
       setAudioTrack(
@@ -66,9 +78,9 @@ const GasTracker = () => {
         "https://arweave.net/u5YsxIo53bHlhNbtjZxaH1PSdKLTvY6Tm0dgZhulnp8"
       );
       setOverlayStyle({
-        top: "39%",
+        top: "38%",
         left: "50.2%",
-        fontSize: "5vw",
+        fontSize: "6vw",
       });
     } else if (gas < 80) {
       setAudioTrack(
@@ -78,9 +90,9 @@ const GasTracker = () => {
         "https://arweave.net/u5YsxIo53bHlhNbtjZxaH1PSdKLTvY6Tm0dgZhulnp8"
       );
       setOverlayStyle({
-        top: "39%",
+        top: "38%",
         left: "50.2%",
-        fontSize: "5vw",
+        fontSize: "6vw",
       });
     } else if (gas < 100) {
       setAudioTrack(
@@ -102,7 +114,8 @@ const GasTracker = () => {
       );
       setOverlayStyle({
         top: "36%",
-        left: "52%",
+        left: "51.2%",
+        fontSize: "3.8vw",
       });
     } else if (gas < 300) {
       setAudioTrack(
@@ -112,10 +125,11 @@ const GasTracker = () => {
         "https://arweave.net/Bozp694I6gbxMuboxgkr6hAN4yzLL7vmoDg3ymfmHng"
       );
       setOverlayStyle({
-        top: "36%",
-        left: "52%",
+        top: "36.5%",
+        left: "52.2%",
+        fontSize: "3.2vw",
       });
-    } else {
+    } else if (gas < 1000) {
       setAudioTrack(
         "https://arweave.net/eIrrrUwkZQyQ_WTYeodrGk34XCgyS1fSO_hhWALMXIw"
       );
@@ -123,8 +137,33 @@ const GasTracker = () => {
         "https://arweave.net/Bozp694I6gbxMuboxgkr6hAN4yzLL7vmoDg3ymfmHng"
       );
       setOverlayStyle({
-        top: "36%",
-        left: "52%",
+        top: "36.5%",
+        left: "52.2%",
+        fontSize: "3.2vw",
+      });
+    } else if (gas < 2000) {
+      setAudioTrack(
+        "https://arweave.net/eIrrrUwkZQyQ_WTYeodrGk34XCgyS1fSO_hhWALMXIw"
+      );
+      setImageSrc(
+        "https://arweave.net/Bozp694I6gbxMuboxgkr6hAN4yzLL7vmoDg3ymfmHng"
+      );
+      setOverlayStyle({
+        top: "36.9%",
+        left: "51.5%",
+        fontSize: "2.5vw",
+      });
+    } else if (gas < 10000) {
+      setAudioTrack(
+        "https://arweave.net/eIrrrUwkZQyQ_WTYeodrGk34XCgyS1fSO_hhWALMXIw"
+      );
+      setImageSrc(
+        "https://arweave.net/Bozp694I6gbxMuboxgkr6hAN4yzLL7vmoDg3ymfmHng"
+      );
+      setOverlayStyle({
+        top: "37%",
+        left: "51.9%",
+        fontSize: "2.5vw",
       });
     }
   };

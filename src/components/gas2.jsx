@@ -82,6 +82,18 @@ const GasTracker = () => {
         left: "50.2%",
         fontSize: "6vw",
       });
+    } else if (gas === 69) {
+      setAudioTrack(
+        "https://arweave.net/OdJF1lhelYJ6DPUXRbInelvA-yIgiH81HsqwvQvNHk0"
+      );
+      setImageSrc(
+        "https://arweave.net/u5YsxIo53bHlhNbtjZxaH1PSdKLTvY6Tm0dgZhulnp8"
+      );
+      setOverlayStyle({
+        top: "38%",
+        left: "50.2%",
+        fontSize: "6vw",
+      });
     } else if (gas < 80) {
       setAudioTrack(
         "https://arweave.net/WwfQqLCDKkYmtlO0KRf1WPCxFl7YJkRYxrQ7d4wCZUA"
